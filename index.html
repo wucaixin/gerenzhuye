@@ -13,25 +13,16 @@
 			<a href="">Homepage</a>
 			<h1>个人主页</h1>
 		</div>
-		<img src="img/logo.png" alt="" class="logo">
+		<!-- <img src="img/logo.png" alt="" class="logo"> -->
 	</div>
 	<div class="container main">
-		<div class="row">
-			<div class="daohang">
-				<a href="">个人介绍</a>
-				<a href="">个人作品展示</a>
-				<a href="">个人技能</a>
-				<a href="">联系方式</a>	
-			</div>
-			
+		<div class="row  active">
 			<div class="col-md-4">
 				<div class="content">
 					<div class="imgbox">
 						<div class="imginner">
 							<img src="img/f14.jpg" alt="" class="img-responsive">
-
-						</div>
-							
+						</div>		
 					</div>
 					<div class="img_wenzi">
 						<h1>个人简介</h1>
@@ -49,7 +40,6 @@
 					<div class="imgbox1 imgbox2">
 						<div class="imginner1">
 							<img src="img/shu.jpg" alt="" class="img-responsive">
-
 						</div>	
 						<div class="img1_wenzi img1_wenzi1">
 							<h1>个人爱好</h1>
@@ -65,8 +55,7 @@
 							<h1>人生信条</h1>
 							<h2>&nbsp;&nbsp;&nbsp;&nbsp;我不想成为一个庸俗的人。十年百年后，当我们死去，质疑我们的人同样死去，后人看到的是裹足不前、原地打转的你，还是一直奔跑、走到远方的我？</h2>
 						</div>
-					</div>
-					
+					</div>	
 				</div>
 			</div>
 		</div>
@@ -81,7 +70,7 @@
 						</div>	
 					</div>
 					<div class="title">
-						<a href="https://wucaixin.github.io/xiaomiwang/">小米官网</a>
+						<a href=" https://wucaixin.github.io/xiaomijs/">小米官网</a>
 					</div>
 				</div>
 			</div>
@@ -94,7 +83,7 @@
 						</div>	
 					</div>
 					<div class="title">
-						<a href="https://wucaixin.github.io/WUIW1711-suning/">苏宁官网</a>
+						<a href=" https://wucaixin.github.io/suning/">苏宁官网</a>
 					</div>
 				</div>
 			</div>
@@ -150,30 +139,70 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-md-4">
+				<div class="content">
+					<div class="imgbox">
+						<div class="imginner">
+							<img src="img/tianqi.jpg" alt="" class="img-responsive">
+							<div class="imginner_zhe"></div>
+						</div>	
+					</div>
+					<div class="title">
+						<a href="https://wucaixin.github.io/tianqi/">天气App</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="content">
+					<div class="imgbox">
+						<div class="imginner">
+							<img src="img/todo.jpg" alt="" class="img-responsive">
+							<div class="imginner_zhe"></div>
+						</div>	
+					</div>
+					<div class="title">
+						<a href="https://wucaixin.github.io/todo/">todo应用</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="content">
+					<div class="imgbox">
+						<div class="imginner">
+							<img src="img/tianmao.jpg" alt="" class="img-responsive">
+							<div class="imginner_zhe"></div>
+						</div>	
+					</div>
+					<div class="title">
+						<a href="https://wucaixin.github.io/tianmao/">
+						天猫</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="row">
 			<div class="top_title">个人技能</div>
 			<div class="col-md-12">
-				<h3>Photoshop</h3>
-				<div class="jineng">
+				<h3>Photoshop 90%</h3>
+				<div class="jineng jineng1">
 					<div class="jineng_xian1"></div>
 				</div>
 			</div>
 			<div class="col-md-12">
-				<h3>Html5</h3>
-				<div class="jineng">
+				<h3>Html5 95%</h3>
+				<div class="jineng jineng2">
 					<div class="jineng_xian2"></div>
 				</div>
 			</div>
 			<div class="col-md-12">
-				<h3>Javascript</h3>
-				<div class="jineng">
+				<h3>Javascript 80%</h3>
+				<div class="jineng jineng3">
 					<div class="jineng_xian3"></div>
 				</div>
 			</div>
 			<div class="col-md-12">
-				<h3>PHP</h3>
-				<div class="jineng">
+				<h3>PHP 85%</h3>
+				<div class="jineng jineng4">
 					<div class="jineng_xian4"></div>
 				</div>
 			</div>
@@ -225,5 +254,33 @@
 			</div>
 		</div>
 	</div>
+	<div class="leftBar">
+		<div class="tips active">个人简介</div>
+		<div class="tips">作品展示</div>
+		<div class="tips">个人技能</div>
+		<div class="tips">联系方式</div>
+	</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+	{
+		$(".jineng4").mouseenter(function(){
+			$(".jineng_xian4")
+				.animate({width:850},1000)
+		});
+		$(".jineng3").mouseenter(function(){
+			$(".jineng_xian3")
+				.animate({width:800},1000)
+		});
+		$(".jineng2").mouseenter(function(){
+			$(".jineng_xian2")
+				.animate({width:950},1000)
+		});
+		$(".jineng1").mouseenter(function(){
+			$(".jineng_xian1")
+				.animate({width:900},1000)
+		});
+	}	
+	</script>
 </body>
 </html>
